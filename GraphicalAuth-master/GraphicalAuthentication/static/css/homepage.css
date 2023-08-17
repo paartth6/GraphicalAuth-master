@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #97d8c4 50%, #4059ad 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #4059ad;
+    /* background: -webkit-linear-gradient(#4059ad,#97d8c4);
+        background-clip:text ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+.center-div button {
+    margin: 2% 5%;
+    border: 0px;
+}
+
+.one,
+.two {
+    background-color: #4059ad;
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    color: #4059ad;
+    font-weight: bold;
+}
